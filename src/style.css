@@ -1,0 +1,201 @@
+* {
+ margin: 0;
+ padding: 0;
+ font-family: Arial, Helvetica, sans-serif;
+ font-size: 14px;
+ 
+}
+li {
+    list-style: none;
+}
+body {
+    margin: auto;
+    max-width: 800px;
+    display: flexbox;
+    box-sizing: border-box;
+    background-color: gray; 
+}
+nav {
+    background-color: #333;
+    overflow: hidden;
+    position: fixed;
+    width: 100%;
+    max-width: 800px;
+}
+nav .logo {
+    color: #fff;
+    float: left;
+    display: block;
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+}
+nav a {
+    color: #fff;
+    float: right;
+    text-decoration: none;
+    display: block;
+    padding:  14px 16px;
+}
+nav a:hover{
+    transition: 0.7s;
+    background-color: #e4e4e4;
+    color: black;
+}
+.tecpic {
+    border: 1px solid #8a8a8a;
+    width: 110px;
+    border-radius: 5px;     
+}
+.tecpic:hover {
+    width: 115px;
+    box-shadow: 2px 2px #333;
+}
+
+.container {  display: grid;
+    grid-template-columns: 35% 65%;
+    grid-template-rows: 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    justify-content: center;
+    align-content: center;
+    justify-items: center;
+    grid-template-areas:
+      ". .";
+    height: 100%;
+    padding-top: 70px;
+    background-color: #fff;
+    border-radius: 10px;
+    padding-bottom: 20px;
+    min-height: 200px;
+  }
+.headertext {
+    background-color: rgb(221, 217, 217);
+    margin: 10px 10px 10px 10px;
+    text-align: justify;
+    padding: 10px 10px 10px 10px;
+    border-radius: 2px;
+    animation: anima 10s ease-in-out infinite;
+
+}
+h1 {
+    text-align: left;
+    margin: 0 0 10px 3px;
+}
+.css, .javascript, .react, .node, .git {
+    width: 100px;
+    margin: 15px;
+    animation: tec-animation 5s ease-in-out infinite;
+}
+.html {
+    width: 118px;
+    margin-top: 10px;
+    animation: tec-animation 5s ease-in-out infinite;
+}
+
+.tecnologies span:hover {
+    border: 4px solid white;
+    border-radius: 15px;
+    background-color: #868686;
+}
+.tecnologies {
+    background-color: #adadad;
+    border-radius: 10px;
+    display: flex;
+    flex-wrap: wrap;  
+    flex-direction: row; 
+    justify-content: space-around;
+    min-height: 160px;
+    height: auto;
+    margin: 10px 0 10px 0;
+}
+.projects {
+    background-color: #161616;
+    border-radius: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+    padding-bottom: 20px;
+}
+
+.comingsoon {
+    width: 200px;
+}
+.boxcs {
+    margin: 20px 10px 10px 10px;
+    width: 200px;
+    background-color: #e4e4e4;
+    border: 2px solid black;
+    border-radius: 10px;
+}
+.boxcs p, h2 {
+    text-align: center;
+    
+}
+.github, .linkedin, .gmail {
+    width: 100px;
+    margin: 10px 10px 10px 10px;
+}
+
+footer {
+    margin-top: 10px;
+    background-color: rgb(198, 193, 216);
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.linkedin, .gmail{
+    padding-top: 10px;
+}
+
+footer div {
+    width: 100%;
+    flex-direction: column;
+    justify-content:flex-end;
+    text-align: center;
+    margin-bottom:  20px;
+}
+
+@keyframes anima {
+    0%{
+        border-width: 3px;
+        border-style: solid;
+        border-image: linear-gradient(to right, rgb(202, 202, 202), rgb(34, 34, 34)) 1;
+    }
+    50%{
+        
+        border-width: 3px;
+        border-style: solid;
+        border-image: linear-gradient(to right, rgb(35, 35, 36), rgb(187, 187, 187)) 1;
+    }
+    100%{
+        border-width: 3px;
+        border-style: solid;
+        border-image: linear-gradient(to right, rgb(206, 206, 206), rgb(37, 37, 37)) 1;
+    }
+}
+@keyframes tec-animation {
+    0%{
+        transform: translateY(0px);
+    }
+    50%{
+        transform: translateY(9px);
+    }
+    100%{
+        transform: translateY(0px);
+    }
+}
+@media (min-width:500px) {
+    .tecpic {
+        border: 1px solid #8a8a8a;
+        width: 160px;
+        border-radius: 5px;     
+    }
+    .tecpic:hover {
+        width: 165px;
+        box-shadow: 2px 2px #333;
+    }
+    
+}
